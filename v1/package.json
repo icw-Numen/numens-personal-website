@@ -1,0 +1,20 @@
+{
+  "name": "numens-personal-website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icw-Numen/numens-personal-website.git"
+  },
+  "author": "Igor Chen Wu (Numen)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icw-Numen/numens-personal-website/issues"
+  },
+  "homepage": "https://github.com/icw-Numen/numens-personal-website#readme"
+}
