@@ -1,28 +1,49 @@
 <% include ./partials/header %>
 
-<table>
-    <tr>
-        <td class='homeIntro'>
-            <div>
-                <h1>Hey there!</h1>
-                <p>I'm Igor Wu and welcome to my website!</p>
-                <p>Click on the links in the menu above to learn more about:</p>
-                <ul>
-                    <li><i class="fas fa-angle-right"></i>Me!</li>
-                    <li><i class="fas fa-angle-right"></i>My projects</li>
-                    <li><i class="fas fa-angle-right"></i>And other neat stuff</li>
-                </ul>
-                <p>Feel free to check out the other pages too!</p>
-            </div>
-        </td>
-        <td class='homeIntro2'>
-            <div class="introPhoto">
-                <img src="https://media.licdn.com/dms/image/C4D03AQGhOign0-WCBQ/profile-displayphoto-shrink_200_200/0?e=1539820800&v=beta&t=OxFjbh6723FzklODZMmWzQFtjFGPtHG2QvaZnkEBSfE">
-                <p><em>This is me</em></p>
-            </div>
-        </td>
-    </tr>
-</table>
+<div class="center">
+    <div class="content-full-page home">
+        
+        <table>
+            <tr>
+                <td class='homeIntro'>
+                    <div>
+                        <h1>Hey there!</h1>
+                        <p>I'm Igor Wu and welcome to my personal website!</p>
+                        <p>There isn't much to see on this page, but you can click on the links in the navbar above to learn more about:</p>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i>Me!</li>
+                            <li><i class="fas fa-angle-right"></i>My projects</li>
+                            <li><i class="fas fa-angle-right"></i>And other neat stuff</li>
+                        </ul>
+                        <p>Thanks for your attention!</p>
+                    </div>
+                </td>
+                
+                <td class='homeIntro2'>
+                    <div class="introPhoto">
+                        <img src="https://media.licdn.com/dms/image/C4D03AQGhOign0-WCBQ/profile-displayphoto-shrink_200_200/0?e=1539820800&v=beta&t=OxFjbh6723FzklODZMmWzQFtjFGPtHG2QvaZnkEBSfE">
+                        <p><em>Me on a good day.</em></p>
+                        <div class="deets">
+                            <p>You can also find me on: </p>
+                            <p>
+                                <a href="https://github.com/icw-Numen">Github</a>, 
+                                <a href="https://twitter.com/raw_sauce_numen">Twitter</a>,
+                                <a href="https://pixiv.me/icw-numen">Pixiv</a>,
+                                <a href="https://www.facebook.com/igchenwu">Facebook</a>, 
+                                <a href="https://steamcommunity.com/id/burnt_mosquito/">Steam</a>
+                            </p>
+                            <p class="small"><em>Like my stuff?<a href="https://ko-fi.com/rawsaucenumen"> Any support is deeply appreciated</a></em></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+</div>
 
+<script type="text/javascript">
+            $('.content-full-page').animate({'opacity':'1'}, 600);
+</script>
 
 <% include ./partials/footer %>
