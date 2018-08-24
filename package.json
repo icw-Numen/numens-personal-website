@@ -1,3 +1,5 @@
-"scripts": {
-  "start": "cd v1/ && node app.js"
+{
+    "scripts": {
+        "start": "cd v1/ && node app.js"
+    }
 }
