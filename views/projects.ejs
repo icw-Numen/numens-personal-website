@@ -51,22 +51,4 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    // $('.content-full-page').animate({'opacity':'1'}, 600);
-    $('.center').stop(true).fadeIn({
-        duration: 1000,
-        queue: false
-    }).css('display', 'none').slideDown(600);
-    
-    $("a").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $(".center").fadeOut(150, redirectPage(linkLocation));      
-    });
-
-    function redirectPage(link) {
-        document.location.href= link;
-    }
-</script>
-
 <% include ./partials/footer %>

@@ -63,6 +63,7 @@ h1, h2, h3 {
     padding-bottom: .2em;
     display: inline-block;
     border-bottom: 2px solid var(--header-border-color);
+    font-family: "Orbitron";
 }
 
 h3 {
@@ -119,11 +120,12 @@ a:visited {
     padding: .6em 0 .6em 0;
     overflow: auto;
     background-color: var(--navbar-bg-color);
+    font-family: Orbitron;
     
     /* shadow */
-    -moz-box-shadow:  0px 6px 5px rgba(11, 11, 11, .2);
-    -webkit-box-shadow:  0px 6px 5px rgba(11, 11, 11, .2);
-    box-shadow: 0px 5px 5px rgba(11, 11, 11, .2);
+    -moz-box-shadow:  0px 5px 10px rgba(11, 11, 11, .3);
+    -webkit-box-shadow:  0px 5px 10px rgba(11, 11, 11, .3);
+    box-shadow: 0px 5px 10px rgba(11, 11, 11, .3);
 }
 
 .navbar li {
@@ -217,8 +219,8 @@ li.nav-right i {
     float:left;
     
     /* shadow */
-    -moz-box-shadow:  7px 15px 15px rgba(11, 11, 11, .2);
-    -webkit-box-shadow:  7px 15px 15px rgba(11, 11, 11, .2);
+    -moz-box-shadow:  0 15px 15px rgba(11, 11, 11, .2);
+    -webkit-box-shadow:  0 15px 15px rgba(11, 11, 11, .2);
     box-shadow: 0 15px 15px rgba(11, 11, 11, .2);
 }
 
@@ -246,9 +248,9 @@ li.nav-right i {
     overflow: auto;
     
     /* shadow */
-    -moz-box-shadow:  7px 15px 15px rgba(11, 11, 11, .2);
-    -webkit-box-shadow:  7px 15px 15px rgba(11, 11, 11, .2);
-    box-shadow: 6px 9px 5px rgba(11, 11, 11, .2);
+    -moz-box-shadow:  6px 9px 15px rgba(11, 11, 11, .2);
+    -webkit-box-shadow:  6px 9px 15px rgba(11, 11, 11, .2);
+    box-shadow: 6px 9px 15px rgba(11, 11, 11, .2);
 }
 
 .content-half-page {
@@ -265,9 +267,9 @@ li.nav-right i {
     overflow: auto;
     
     /* shadow */
-    -moz-box-shadow:  7px 13px 15px rgba(11, 11, 11, .2);
-    -webkit-box-shadow:  7px 13px 15px rgba(11, 11, 11, .2);
-    box-shadow: 6px 9px 5px rgba(11, 11, 11, .2);
+    -moz-box-shadow:  6px 9px 15px rgba(11, 11, 11, .2);
+    -webkit-box-shadow:  6px 9px 15px rgba(11, 11, 11, .2);
+    box-shadow: 6px 9px 15px rgba(11, 11, 11, .2);
 }
 
 .content-half-page li:last-child {
