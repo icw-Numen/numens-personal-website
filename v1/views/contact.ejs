@@ -1,13 +1,77 @@
 <% include ./partials/header %>
 
-<div class="content-full-page">
-
-    <h1>Contact Info.</h1>
-
+<div class="center">
+    <div class="content-full-page">
+        <h1>Contact Info.</h1>
+        <table class="cards">
+            <tr>
+                <td>
+                    <div class="card">
+                        <h2>Contact Info.</h2>
+                        <div class="card-content inline">
+                            <ul>
+                                <li><i class="fas fa-angle-right"></i>Full Name: Igor Chen Wu</li>
+                                <li><i class="fas fa-angle-right"></i>E-mail: i2wu@ucsd.edu</li>
+                                <li><i class="fas fa-angle-right"></i>Phone: (858) 997-7190</li>
+                                <li><i class="fas fa-angle-right"></i>Current Address: 4444 Eastgate Mall, Unit 1</li>
+                                <li><i class="fas fa-angle-right"></i>Perm. Address: Rua Ministro Godoi 1348, Sao Paulo, SP, Brazil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="card">
+                        <h2>Social Media</h2>
+                        <div class="card-content inline">
+                            <ul>
+                                <li><i class="fas fa-angle-right"></i><a href="https://www.linkedin.com/in/igor-wu-9b8056109">LinkedIn</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://github.com/icw-Numen">Github</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://twitter.com/raw_sauce_numen">Twitter</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://www.facebook.com/igchenwu">Facebook</a></li>
+                                <li><i class="fas fa-angle-right"></i><a href="https://steamcommunity.com/id/burnt_mosquito/">Steam</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-right: 0;">
+                    <div class="card">
+                        <h2>Art</h2>
+                        <p>Some of you might have seen my artwork floating around various parts of the Internet.<br />You can check out my artwork with the links below (do note that some of my content might be NSFW):</p>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><a href="https://twitter.com/raw_sauce_numen">Twitter</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="https://pixiv.me/icw-numen">Pixiv</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <p><em>Like my stuff?<a href="https://ko-fi.com/rawsaucenumen"> Any support is deeply appreciated</a></em></p>
+        
+    </div>
 </div>
 
 <script type="text/javascript">
-            $('.content-full-page').animate({'opacity':'1'}, 600);
+    // $('.content-full-page').animate({'opacity':'1'}, 600).slideDown(600);
+    $('.center').stop(true).fadeIn({
+        duration: 1000,
+        queue: false
+    }).css('display', 'none').slideDown(600);
+    
+    $("a").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $(".center").fadeOut(150, redirectPage(linkLocation));      
+    });
+
+    function redirectPage(link) {
+        document.location.href= link;
+    }
 </script>
 
 <% include ./partials/footer %>

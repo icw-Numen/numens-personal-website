@@ -1,0 +1,147 @@
+<% include ./partials/header %>
+
+<div class="center">
+    <div class="content-full-page">
+        
+        <h1>If you're interested, </h1>
+        <p>
+            <a href="https://drive.google.com/file/d/1cVylferhy2TBlmvcPONooL7hHyP_RVYQ/view?usp=sharing">here's my full one-page resume.</a>
+        </p>
+        <p>
+            For information about my personal projects, please check the <a href="/projects">Projects</a> tab above. For additional contact information, check <a href="/contact">Contact</a>.
+        </p>
+        <table class="cards">
+            <tr>
+                <td>
+                    <div class="card">
+                        <h2>Education</h2>
+                        <div class="card-content">
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i><strong>Bachelor of Science, Mathematics – Computer Science</strong></li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>University of California San Diego, La Jolla, CA</li>
+                                    <li><i class="fas fa-angle-right"></i>Expected Graduation Date: June 2019</li>
+                                    <li><i class="fas fa-angle-right"></i>GPA: 3.00</li>
+                                    <li><i class="fas fa-angle-right"></i><strong>Sponsorship required to work in the US</strong></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="card">
+                        <h2>Contact Info. and Address</h2>
+                        <div class="card-content">
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i>Contact Info.</li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>Full Name: Igor Chen Wu</li>
+                                    <li><i class="fas fa-angle-right"></i>E-mail: i2wu@ucsd.edu</li>
+                                    <li><i class="fas fa-angle-right"></i>Phone: (858) 997-7190</li>
+                                    <li><i class="fas fa-angle-right"></i>Current Address: 4444 Eastgate Mall, Unit 1</li>
+                                    <li><i class="fas fa-angle-right"></i>Perm. Address: Rua Ministro Godoi 1348, Sao Paulo, SP, Brazil</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" style="padding-right: 0;">
+                    <div class="card">
+                        <h2>Skills</h2>
+                        <div class="card-content inline">
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i>Programming Languages:</li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>Javascript</li>
+                                    <li><i class="fas fa-angle-right"></i>Java</li>
+                                    <li><i class="fas fa-angle-right"></i>Python</li>
+                                    <li><i class="fas fa-angle-right"></i>C#, C, and C++</li>
+                                </ul>
+                            </ul>
+                            
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i>Back End:</li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>Node.js</li>
+                                    <li><i class="fas fa-angle-right"></i>Express</li>
+                                    <li><i class="fas fa-angle-right"></i>Mongodb</li>
+                                    <li><i class="fas fa-angle-right"></i>SQLite</li>
+                                </ul>
+                            </ul>
+                            
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i>Front End:</li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>HTML 5</li>
+                                    <li><i class="fas fa-angle-right"></i>CSS</li>
+                                    <li><i class="fas fa-angle-right"></i>jQuery</li>
+                                </ul>
+                            </ul>
+                            
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i>Software Development:</li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>Git (GitHub, GitLab)</li>
+                                    <li><i class="fas fa-angle-right"></i>Agile</li>
+                                    <li><i class="fas fa-angle-right"></i>UML</li>
+                                    <li><i class="fas fa-angle-right"></i>Testing Automation</li>
+                                </ul>
+                            </ul>
+                            
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i>Software:</li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>Adobe (<strong>Photoshop</strong>, <strong>Illustrator</strong>, Dreamweaver)</li>
+                                    <li><i class="fas fa-angle-right"></i>Unity</li>
+                                    <li><i class="fas fa-angle-right"></i>MATLAB</li>
+                                    <li><i class="fas fa-angle-right"></i>Blender</li>
+                                    <li><i class="fas fa-angle-right"></i>Microsoft Office</li>
+                                </ul>
+                            </ul>
+                            
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i>Language Skills:</li>
+                                <ul>
+                                    <li><i class="fas fa-angle-right"></i>English (fluent)</li>
+                                    <li><i class="fas fa-angle-right"></i>Brazilian Portuguese (native language)</li>
+                                    <li><i class="fas fa-angle-right"></i>Spanish (intermediate)</li>
+                                    <li><i class="fas fa-angle-right"></i>Japanese (basic)</li>
+                                </ul>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <p>
+            <em>Note: All the information above is subject to change.</em>
+        </p>
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+    // $('.content-full-page').animate({'opacity':'1'}, 600).slideDown(600);
+    $('.center').stop(true).fadeIn({
+        duration: 1000,
+        queue: false
+    }).css('display', 'none').slideDown(600);
+    
+    $("a").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $(".center").fadeOut(150, redirectPage(linkLocation));      
+    });
+
+    function redirectPage(link) {
+        document.location.href= link;
+    }
+</script>
+
+<% include ./partials/footer %>

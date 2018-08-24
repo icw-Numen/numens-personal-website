@@ -18,8 +18,8 @@ router.get('/contact', function(req, res) {
     res.render('contact');
 });
 
-router.get('/hire-me', function(req, res) {
-    res.render('hireme');
+router.get('/resume', function(req, res) {
+    res.render('resume');
 });
 
 router.get('/donate', function(req, res) {
