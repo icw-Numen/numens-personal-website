@@ -12,8 +12,8 @@ var express = require('express'),
 var indexRoutes = require("./routes/index");
 
 // port and IP
-var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-    ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var port = process.env.PORT,
+    ip = process.env.IP;
     
 // connect to db
 //var dbUrl = process.env.DATABASEURL;
