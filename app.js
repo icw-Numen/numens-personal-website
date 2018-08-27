@@ -10,6 +10,10 @@ var express = require('express'),
 
 // requiring routes
 var indexRoutes = require("./routes/index");
+
+// port and IP
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
     
 // connect to db
 //var dbUrl = process.env.DATABASEURL;
@@ -45,6 +49,6 @@ app.use(function(req, res, next){
 // setting up routes
 app.use('/', indexRoutes);
 
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(port, ip, function() {
    console.log('numen\'s personal website\'s server online');
 });
