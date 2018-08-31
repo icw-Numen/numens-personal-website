@@ -98,9 +98,9 @@ a:visited {
     /* bg settings */
     height: 100%;
     background-image: url("https://orig00.deviantart.net/cac0/f/2018/242/6/d/js_tan_silhouette_no_bg_by_icw_numen-dclm1mu.png");
-    background-position: 80% 75%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-size: 55vh;
+    background-size: 70vh;
     background-attachment: fixed;
     z-index: -1;
 }
