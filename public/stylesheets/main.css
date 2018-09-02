@@ -105,61 +105,6 @@ a:visited {
     z-index: -1;
 }
 
-.navbar {
-    margin-bottom: 10px;
-}
-
-.navbar ul {
-    min-width: 950px;
-    position: fixed;
-    z-index: 1;
-    list-style-type: none;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    padding: .6em 0 .6em 0;
-    overflow: hidden;
-    background-color: var(--navbar-bg-color);
-    font-family: Orbitron;
-    
-    /* shadow */
-    -moz-box-shadow:  0px 5px 10px rgba(11, 11, 11, .3);
-    -webkit-box-shadow:  0px 5px 10px rgba(11, 11, 11, .3);
-    box-shadow: 0px 5px 10px rgba(11, 11, 11, .3);
-}
-
-.navbar li {
-    float: left;
-    height: 100%;
-    padding: .2em 0;
-    border-right: 2px solid var(--navbar-border-color);
-}
-
-.navbar a {
-    padding: 0 .7em;
-    display: block;
-    color: var(--navbar-text-color);
-    text-align: center;
-    text-decoration: none;
-}
-
-.navbar i:hover, a:hover {
-    color: var(--selected-color);
-}
-
-li.nav-right {
-    padding: 0;
-    border: 0;
-    padding-top: 0.1em;
-    float: right;
-    font-size: 1.2em;
-}
-
-li.nav-right i {
-    margin: 0;
-    color: var(--navbar-text-color);
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -209,16 +154,16 @@ li.nav-right i {
     color: rgb(255, 181, 96);
 }
 
-.small {
-    font-size: .7em;
-}
-
 .center {
     display: none;
     padding-top: 10vh;
     box-sizing: border-box;
     text-align: center;
     width: 100%;
+}
+
+.small {
+    font-size: .7em;
 }
 
 .cards {
