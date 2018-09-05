@@ -94,7 +94,7 @@ a:visited {
     text-decoration: none;
 }
 
-i.fas.fa-eye-slash {
+i.fas.fa-eye-slash, i.fas.fa-eye {
     font-size: 1.5em;
     color: var(--navbar-bg-color);
     opacity: .7;

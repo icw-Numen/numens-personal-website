@@ -10,13 +10,8 @@ $("a").click(function(event){
 
 // add events to button to hide/show page contents
 $("button.toggleBg").click(function(event) {
-    if($("button.toggleBg i").hasClass("i.fas.fa-eye-slash")) {
-        $("button.toggleBg i").removeClass("i.fas.fa-eye-slash");
-        $("button.toggleBg i").addClass("i.fas.fa-eye");
-    } else {
-        $("button.toggleBg i").removeClass("i.fas.fa-eye");
-        $("button.toggleBg i").addClass("i.fas.fa-eye-slash");
-    }
+    $("button.toggleBg i").toggleClass("fas fa-eye-slash");
+    $("button.toggleBg i").toggleClass("fas fa-eye");
     $(".center").fadeToggle(700);
 });
 
