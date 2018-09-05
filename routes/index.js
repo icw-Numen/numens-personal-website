@@ -6,12 +6,16 @@ router.get('/', function(req, res) {
     res.render('home');
 });
 
+router.get('/about', function(req, res) {
+    res.render('about');
+});
+
 router.get('/projects', function(req, res) {
     res.render('projects');
 });
 
-router.get('/about', function(req, res) {
-    res.render('about');
+router.get('/art', function(req, res) {
+    res.render('art');
 });
 
 router.get('/contact', function(req, res) {
