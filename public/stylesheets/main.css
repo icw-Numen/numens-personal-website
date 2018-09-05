@@ -94,6 +94,25 @@ a:visited {
     text-decoration: none;
 }
 
+i.fas.fa-eye-slash {
+    font-size: 1.5em;
+    color: var(--navbar-bg-color);
+    opacity: .7;
+}
+
+.toggleBg {
+    margin-top: 8vh;
+    margin-left: 2vw;
+    
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
 .bg {
     /* bg settings */
     height: 100%;
