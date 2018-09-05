@@ -3,7 +3,7 @@
 }
 
 .navbar ul {
-    min-width: 950px;
+    min-width: 1000px;
     position: fixed;
     z-index: 1;
     list-style-type: none;
