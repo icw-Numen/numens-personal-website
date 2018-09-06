@@ -9,7 +9,7 @@ $('a').click(function(event){
 });
 
 // add events to button to hide/show page contents
-$('button.toggleBg').click(function(event) {
+$('.toggleBg').on('click', function() {
     $('button.toggleBg i').toggleClass('fas fa-eye-slash');
     $('button.toggleBg i').toggleClass('fas fa-eye');
     $('.center').fadeToggle(700);

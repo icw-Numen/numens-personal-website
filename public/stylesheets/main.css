@@ -1,6 +1,6 @@
 :root {
-  /*--main-bg-color: rgb(210, 207, 207);*/
-  --main-bg-color: rgb(216, 208, 197);
+  /*--main-bg-color: rgb(216, 208, 197);*/
+  --main-bg-color: rgb(135, 125, 125);
   --main-font-color: rgb(230, 227, 227);
   --main-content-color: rgba(58, 52, 53, .85);
   
@@ -104,7 +104,7 @@ i.fas.fa-eye-slash, i.fas.fa-eye {
 .toggleBg {
     margin-top: 6vh;
     margin-left: 1vw;
-    position: absolute;
+    position:fixed;
     
     background: none;
     color: inherit;
