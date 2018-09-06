@@ -172,7 +172,7 @@ i.fas.fa-eye-slash, i.fas.fa-eye {
 }
 
 .active {
-    color: rgb(255, 181, 96);
+    color: var(--selected-color);
 }
 
 .center {

@@ -1,3 +1,6 @@
+// highlight navbar tab according to current tab
+$(`.navbar a[href='${window.location.pathname}']`).css('color', 'var(--selected-color)');
+
 // fade in page content on load
 $('.center').stop(true).fadeIn({ duration: 1000, queue: false }).css('display', 'none').slideDown(700);
 
@@ -16,5 +19,5 @@ $('.toggleBg').on('click', function() {
 });
 
 function redirectPage(link) {
-    document.location.href= link;
+    document.location.href = link;
 }
