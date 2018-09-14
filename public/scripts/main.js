@@ -8,7 +8,9 @@ $('.center').stop(true).fadeIn({ duration: 1000, queue: false }).css('display', 
 $('a').click(function(event){
     event.preventDefault();
     linkLocation = this.href;
-    $('.center').fadeOut({ duration: 1000, queue: false }).slideUp(700, redirectPage(linkLocation));
+    $('.center').fadeOut({ duration: 1000, queue: false }).slideUp(700, function() {
+        setTimeout(function(){ redirectPage(linkLocation); }, 200);
+    });
 });
 
 // add events to button to hide/show page contents
