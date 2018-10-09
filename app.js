@@ -55,13 +55,13 @@ app.use(function(req, res, next){
 // setting up routes
 app.use('/', indexRoutes);
 
-// app.listen(port, ip, function() {
-//   console.log('numen\'s personal website\'s server online');
-// });
-
-https.createServer({
-    key: privateKey,
-    cert: certificate
-}, app).listen(port, function() {
-   console.log('numen\'s personal website\'s https server online');
+app.listen(port, ip, function() {
+  console.log('numen\'s personal website\'s server online');
 });
+
+// https.createServer({
+//     key: privateKey,
+//     cert: certificate
+// }, app).listen(port, function() {
+//   console.log('numen\'s personal website\'s https server online');
+// });
