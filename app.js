@@ -6,7 +6,9 @@ var express = require('express'),
     passport = require('passport'),
     LocalStrategy = require('passport-local'),
     //mongoose = require('mongoose'),
-    middleware = require('./middleware');
+    middleware = require('./middleware'),
+    fs = require('fs'),
+    https = require('https');
 
 // requiring routes
 var indexRoutes = require("./routes/index");
@@ -14,6 +16,10 @@ var indexRoutes = require("./routes/index");
 // port and IP
 var port = process.env.PORT,
     ip = process.env.IP;
+    
+//HTTPS
+var privateKey = fs.readFileSync('./ssl/domain-key.pem');
+var certificate = fs.readFileSync('./ssl/domain-crt.pem');
     
 // connect to db
 //var dbUrl = process.env.DATABASEURL;
@@ -49,6 +55,13 @@ app.use(function(req, res, next){
 // setting up routes
 app.use('/', indexRoutes);
 
-app.listen(port, ip, function() {
+// app.listen(port, ip, function() {
+//   console.log('numen\'s personal website\'s server online');
+// });
+
+https.createServer({
+    key: privateKey,
+    cert: certificate
+}, app).listen(port).listen(port, ip, function() {
    console.log('numen\'s personal website\'s server online');
 });
