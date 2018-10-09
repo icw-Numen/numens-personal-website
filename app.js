@@ -55,16 +55,6 @@ app.use(function(req, res, next){
 // setting up routes
 app.use('/', indexRoutes);
 
-function requireHTTPS(req, res, next) {
-  // The 'x-forwarded-proto' check is for Heroku
-  if (!req.secure && req.get('x-forwarded-proto') !== 'https') {
-    return res.redirect('https://' + req.get('host') + req.url);
-  }
-  next();
-}
-
-app.use(requireHTTPS);
-
 app.listen(port, ip, function() {
   console.log('numen\'s personal website\'s server online');
 });
