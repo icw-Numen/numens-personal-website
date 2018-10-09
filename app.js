@@ -62,6 +62,6 @@ app.use('/', indexRoutes);
 https.createServer({
     key: privateKey,
     cert: certificate
-}, app).listen(port).listen(port, ip, function() {
+}, app).listen(port, ip, function() {
    console.log('numen\'s personal website\'s server online');
 });
