@@ -18,8 +18,8 @@ var port = process.env.PORT,
     ip = process.env.IP;
     
 //HTTPS
-var privateKey = fs.readFileSync('./ssl/domain-key.pem');
-var certificate = fs.readFileSync('./ssl/domain-crt.pem');
+var privateKey = fs.readFileSync('./ssl/domain-key.txt');
+var certificate = fs.readFileSync('./ssl/domain-crt.txt');
     
 // connect to db
 //var dbUrl = process.env.DATABASEURL;
@@ -55,13 +55,13 @@ app.use(function(req, res, next){
 // setting up routes
 app.use('/', indexRoutes);
 
-app.listen(port, ip, function() {
-  console.log('numen\'s personal website\'s server online');
-});
+// app.listen(port, ip, function() {
+//   console.log('numen\'s personal website\'s server online');
+// });
 
 https.createServer({
     key: privateKey,
     cert: certificate
-}, app).listen(8443, function() {
+}, app).listen(port, ip, function() {
    console.log('numen\'s personal website\'s https server online');
 });
