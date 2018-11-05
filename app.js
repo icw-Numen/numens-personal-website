@@ -18,8 +18,8 @@ var port = process.env.PORT,
     ip = process.env.IP;
     
 //HTTPS
-var privateKey = fs.readFileSync(__dirname + '/ssl/domain-key.txt');
-var certificate = fs.readFileSync(__dirname + '/ssl/domain-crt.txt');
+//var privateKey = fs.readFileSync(__dirname + '/ssl/domain-key.txt');
+//var certificate = fs.readFileSync(__dirname + '/ssl/domain-crt.txt');
     
 // connect to db
 //var dbUrl = process.env.DATABASEURL;
